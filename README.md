@@ -1,4 +1,4 @@
-# ProyectoGC
+# ProyectoGC de Bruno Hae y Jesús Alcala
 ## Primera idea:
 Museo de arte interactivo, donde la persona puede leer o escuchar la descripción de diversas piezas de arte (pinturas, esculturas y musica) que nosotros creamos o seleccionemos. El modelo del museo no lo queremos hacer de un museo real, nosotros diseñaremos como es.
 
