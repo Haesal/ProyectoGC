@@ -1,6 +1,6 @@
 # ProyectoGC de Bruno Hae y Jesús Alcala
 
-Museo de arte interactivo, donde la persona puede leer la descripcion de ciertas piezas (pinturas y esculturas), al igual de que podra interactuar con ellas generando un cambio o efecto en estas. Las puezas nosotros las crearemos o selecionaremos. El modelo del museo no lo queremos hacer de un museo real, nosotros diseñaremos como es.
+Museo de arte interactivo, donde la persona puede leer la descripcion de ciertas piezas (pinturas y esculturas), al igual de que podra interactuar con ellas generando un cambio o efecto en estas. Las piezas nosotros las crearemos o selecionaremos. El modelo del museo no lo queremos hacer de un museo real, nosotros diseñaremos como es.
 
 Ejemplos:
 Museo virtual: https://www.youtube.com/watch?v=CmpGmOcXj7w&t=82s
