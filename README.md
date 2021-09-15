@@ -72,9 +72,11 @@ Nosotros pensamos trabajar de manera iterativa, avanzando en las tareas de maner
 
 La forma en la que planeamos cumplir los requerimientos es con el uso de librerias que nos facilitarian el desarrollo de los elementos que requerimos:
 
-Three (Uso general, vimos que es muy usado para webgl y facilita muchas de las tareas).
-jQuery (Creemos que nos ayudara a manejar eventos, no estamos muy seguros si sera necesario sobre lo que js ya ofrece, pero lo tenemos en cuenta).
-Cannon JS y PointerLockControl (Esto lo usaremos para el moviemiento de la camara y aspectos relacionados).
+* Three (Uso general, vimos que es muy usado para webgl y facilita muchas de las tareas).
+
+* jQuery (Creemos que nos ayudara a manejar eventos, no estamos muy seguros si sera necesario sobre lo que js ya ofrece, pero lo tenemos en cuenta).
+
+* Cannon JS y PointerLockControl (Esto lo usaremos para el moviemiento de la camara y aspectos relacionados).
 
 
 	
