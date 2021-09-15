@@ -65,7 +65,7 @@ Nosotros pensamos trabajar de manera iterativa, avanzando en las tareas de maner
 
 8. Documentación -Bruno
 
-### Puede que estas cambian se consideramos necesario
+### Puede que estas cambien si lo consideramos necesario
 
 
 ## Descripcion y librerias
