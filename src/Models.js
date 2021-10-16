@@ -25,22 +25,24 @@ function main() {
     update();
 }
 
+function playVideos(){
+    video1.play();
+    video2.play();
+    video3.play();
+    video4.play();
+}
+
 function initVideos() {
     video1 = document.getElementById('video1');
-    video1.play();
     video2 = document.getElementById('video2');
-    video2.play();
     video3 = document.getElementById('video3');
-    video3.play();
     video4 = document.getElementById('video4');
-    video4.play();
 }
 
 function onError(err) { console.error(err); };
 
 function onProgress(xhr) {
     if (xhr.lengthComputable) {
-
         const percentComplete = xhr.loaded / xhr.total * 100;
         console.log(xhr.target.responseURL, Math.round(percentComplete, 2) + '% downloaded');
     }
@@ -105,6 +107,7 @@ function update() {
 
     // Update the camera controller
     orbitControls.update();
+    playVideos();
 }
 
 function createScene(canvas) {
@@ -148,6 +151,7 @@ function createScene(canvas) {
     paint1.position.y = 0.8;
     p1Group.add(paint1);
     p1Group.position.x = -1.5;
+    video1.play();
 
     //P2
     const texture2 = new THREE.VideoTexture(video2);
@@ -156,6 +160,7 @@ function createScene(canvas) {
     paint2.position.y = 0.8;
     p2Group.add(paint2);
     p2Group.position.x = 0;
+    video2.play();
 
     //P3
     const texture3 = new THREE.VideoTexture(video3);
@@ -164,6 +169,7 @@ function createScene(canvas) {
     paint3.position.y = 0.8;
     p3Group.add(paint3);
     p3Group.position.x = 1.5;
+    video3.play();
 
     //P4
     const texture4 = new THREE.VideoTexture(video4);
@@ -172,6 +178,7 @@ function createScene(canvas) {
     paint4.position.y = 0.8;
     p4Group.add(paint4);
     p4Group.position.x = 3;
+    video4.play();
 
     scene.add(p1Group);
     scene.add(p2Group);
