@@ -91,5 +91,5 @@ La forma en la que el usario interactua con las estatuas y las pinturas es media
 
 ### Interaccion con pinturas:
 
-* En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se movera (play al video) y luego regresara a su posicion original. Si el usuario le vuelve a dar click mienstras se mueve se pausara el este.
+* En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se movera (play al video) y luego regresara a su posicion original. Si el usuario le vuelve a dar click mienstras el video esta corriendo se pausara el este.
 	
