@@ -79,4 +79,17 @@ La forma en la que planeamos cumplir los requerimientos es con el uso de libreri
 * Cannon JS y PointerLockControl (Esto lo usaremos para el moviemiento de la camara y aspectos relacionados).
 
 
+
+## Primera entrega del proyecto 
+
+La forma en la que el usario interactua con las estatuas y las pinturas es mediante el click a una distancia cercana.
+
+# Interacción con estatuas:
+
+* Venus de Milo: cuando el usuario le de click se espera que Venus volte a ver a la posción en donde te encontrabas cuando diste el click y despues de 5 segundos vuelva a su pose normal.
+* Perro de Origami: Lo que planeamos que haga el perro es que se comporte como si lo hubieras acariciado (mover la cola, las orejas y incline la cabeza) y despues regrese a su pose normal. (En este caso como aun no sabemos muy bien el proceso de animación, esto puede cambiar a algo más)
+
+# Interaccion con pinturas:
+
+* En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se movera (play al video) y luego regresara a su posicion original.
 	
