@@ -15,6 +15,8 @@ let ambientLight = null;
 let dogObj = { obj: '../assets/Dog/uploads_files_2600740_ORIGAM_CHIEN_Free.obj', mtl: '../assets/Dog/uploads_files_2600740_ORIGAM_CHIEN_Free.mtl' };
 let venusObj = { obj: '../assets/Venus/uploads_files_798016_venus_polygonal_statue.obj', mtl: '../assets/Venus/uploads_files_798016_venus_polygonal_statue.mtl' };
 let portObj = { obj: '../assets/Portrait/uploads_files_1898405_frame.obj', mtl: '../assets/Portrait/uploads_files_1898405_frame.mtl' };
+let racObj = { obj: '../assets/Racoon/uploads_files_2632923_Raccoon.obj', mtl: '../assets/Racoon/uploads_files_2632923_Raccoon.mtl' };
+
 
 function main() {
     const canvas = document.getElementById("webglcanvas");
@@ -186,6 +188,8 @@ function createScene(canvas) {
     // Create the objects
     loadObjMtl(dogObj, statues, -4, 0, 0, 0.015, 0, 0, 0, scene);
     loadObjMtl(venusObj, statues, -3, 0, 0, 0.015, 0, Math.PI, 0, scene);
+    loadObjMtl(racObj, statues, 4.8, 0.8, 0, 0.25, 0, 0, 0, scene);
+
     loadObjMtl(portObj, paints, 0, 0.8, 0, 0.009, 0, 0, 0, p1Group);
     loadObjMtl(portObj, paints, 0, 0.8, 0, 0.009, 0, 0, 0, p2Group);
     loadObjMtl(portObj, paints, 0, 0.8, 0, 0.009, 0, 0, 0, p3Group);
