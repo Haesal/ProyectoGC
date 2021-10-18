@@ -9,5 +9,5 @@ Ns 100
 illum 7
 
 map_Kd ram1_DefaultMaterial_BaseColor.png
-normap ram1_DefaultMaterial_Normal.png
-map_Pr ram1_DefaultMaterial_OcclusionRoughnessMetallic.png
+norm ram1_DefaultMaterial_Normal.png
+map_RMA ram1_DefaultMaterial_OcclusionRoughnessMetallic.png
