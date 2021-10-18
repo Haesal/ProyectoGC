@@ -194,4 +194,22 @@ function createScene(canvas) {
     loadObjMtl(portObj, paints, 0, 0.8, 0, 0.009, 0, 0, 0, p4Group);
 }
 
-main();
+function resize()
+{
+    const canvas = document.getElementById("webglcanvas");
+
+    canvas.width = document.body.clientWidth;
+    canvas.height = document.body.clientHeight;
+
+    camera.aspect = canvas.width / canvas.height;
+
+    camera.updateProjectionMatrix();
+    renderer.setSize(canvas.width, canvas.height);
+}
+
+window.onload = () => {
+    main();
+    resize(); 
+};
+
+window.addEventListener('resize', resize, false);
