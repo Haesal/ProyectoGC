@@ -19,8 +19,6 @@ let portObj = { obj: '../assets/Portrait/uploads_files_1898405_frame.obj', mtl: 
 function main() {
     const canvas = document.getElementById("webglcanvas");
     initVideos();
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
     createScene(canvas);
     update();
 }
