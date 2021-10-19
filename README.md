@@ -91,7 +91,7 @@ La forma en la que el usario interactua con las estatuas y las pinturas es media
 ![imagen](https://user-images.githubusercontent.com/61795705/137788187-0fc5213c-f202-423e-984f-69b508a3c845.png)
 * Mapache: Queremos que el mapache cambie de escalas de manera aleatoria, al mismo tiempo que vaya cambiando de color. Al final, depues de 5 segundos, que regrese a como estaba.
 * Persona: Queremos que la estatua vuele por la habitacion, cambiando de color, y luego regrese a su posicion original. (10 segundos)
-* Cubo y estatua enredada: Queremos que estas figuras bayan rotando sobre su propio eje, mientras se cambia su escala y color constantemente. En el proceso que esto pase flotaran un poco. (10 segundos)
+* Cubo y estatua enredada: Queremos que estas figuras vayan rotando sobre su propio eje, mientras se cambia su escala y color constantemente. En el proceso que esto pase flotaran un poco. (10 segundos)
 ### Interaccion con pinturas:
 
 * En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se movera (play al video) y luego regresara a su posicion original para que el usuario pueda volver a interactuar con ella.
