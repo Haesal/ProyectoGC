@@ -82,16 +82,17 @@ La forma en la que planeamos cumplir los requerimientos es con el uso de libreri
 
 ## Primera entrega del proyecto 
 
-La forma en la que el usario interactua con las estatuas y las pinturas es mediante el click a una distancia cercana.
+La forma en la que el usario interactua con las estatuas y las pinturas es mediante el click a una distancia cercana. Se manejara el comportanmiento de cada pieza con estados, listeners y raycasting con el fin de que ciertos procesos no se puedan interumpir y los comportamientos sean como nosostros los esperamos.
 
-### Interacción con estatuas:
+### Interacción con estatuas (Todo puede cambiar, dependiendo de lo que veamos que podemos animar):
 
-* Venus de Milo: cuando el usuario le de click se espera que Venus volte a ver a la posción en donde te encontrabas cuando diste el click y despues de 5 segundos vuelva a su pose normal.
-* Perro de Origami: Lo que planeamos que haga el perro es que se comporte como si lo hubieras acariciado (como se ve en la imagen) y despues de 7 segundos regrese a su pose normal. (En este caso como aun no sabemos muy bien el proceso de animación, esto puede cambiar a algo más)
-
+* Venus de Milo: cuando el usuario le de click se espera que Venus volte a ver a la posción en donde te encontrabas cuando diste el click y despues de 5 segundos vuelva a su pose normal. Tambien, si es posible, que la estatua cambie de color a uno aleatorio.
+* Perro de Origami: Lo que planeamos que haga el perro es que se comporte como si lo hubieras acariciado (como se ve en la imagen) y despues de 7 segundos regrese a su pose normal.
 ![imagen](https://user-images.githubusercontent.com/61795705/137788187-0fc5213c-f202-423e-984f-69b508a3c845.png)
-
+* Mapache: Queremos que el mapache cambie de escalas de manera aleatoria, al mismo tiempo que vaya cambiando de color. Al final, depues de 5 segundos, que regrese a como estaba.
+* Persona: Queremos que la estatua vuele por la habitacion, cambiando de color, y luego regrese a su posicion original. (10 segundos)
+* Cubo y estatua enredada: Queremos que estas figuras bayan rotando sobre su propio eje, mientras se cambia su escala y color constantemente. En el proceso que esto pase flotaran un poco. (10 segundos)
 ### Interaccion con pinturas:
 
-* En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se movera (play al video) y luego regresara a su posicion original para que el usuario pueda volver a ainteractuar con ella.
+* En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se movera (play al video) y luego regresara a su posicion original para que el usuario pueda volver a interactuar con ella.
 	
