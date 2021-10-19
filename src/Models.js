@@ -16,6 +16,9 @@ let dogObj = { obj: '../assets/Dog/uploads_files_2600740_ORIGAM_CHIEN_Free.obj',
 let venusObj = { obj: '../assets/Venus/uploads_files_798016_venus_polygonal_statue.obj', mtl: '../assets/Venus/uploads_files_798016_venus_polygonal_statue.mtl' };
 let portObj = { obj: '../assets/Portrait/uploads_files_1898405_frame.obj', mtl: '../assets/Portrait/uploads_files_1898405_frame.mtl' };
 let racObj = { obj: '../assets/Racoon/uploads_files_2632923_Raccoon.obj', mtl: '../assets/Racoon/uploads_files_2632923_Raccoon.mtl' };
+let cubeObj = { obj: '../assets/Cube/uploads_files_2080498_sci+fi+cube.obj', mtl: '../assets/Cube/uploads_files_2080498_sci+fi+cube.mtl' };
+let manObj = { obj: '../assets/Man/uploads_files_1856997_man+pose+1.obj', mtl: '../assets/Man/uploads_files_1856997_man+pose+1.mtl' };
+let twiObj = { obj: '../assets/Twisted/uploads_files_2079352_twisted+torus.obj', mtl: '../assets/Twisted/uploads_files_2079352_twisted+torus.mtl' };
 
 
 function main() {
@@ -189,6 +192,11 @@ function createScene(canvas) {
     loadObjMtl(dogObj, statues, -4, 0, 0, 0.015, 0, 0, 0, scene);
     loadObjMtl(venusObj, statues, -3, 0, 0, 0.015, 0, Math.PI, 0, scene);
     loadObjMtl(racObj, statues, 4.8, 0.8, 0, 0.25, 0, 0, 0, scene);
+    loadObjMtl(cubeObj, statues, 6.8, 0, 0, 0.5, 0, 0, 0, scene);
+    loadObjMtl(manObj, statues, 9, 0, 0, 0.015, 0, 0, 0, scene);
+    loadObjMtl(twiObj, statues, -5.8, 0.8, 0, 10, 0, 0, 0, scene);
+
+    
 
     loadObjMtl(portObj, paints, 0, 0.8, 0, 0.009, 0, 0, 0, p1Group);
     loadObjMtl(portObj, paints, 0, 0.8, 0, 0.009, 0, 0, 0, p2Group);
