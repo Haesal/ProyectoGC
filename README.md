@@ -70,11 +70,11 @@ Nosotros pensamos trabajar de manera iterativa, avanzando en las tareas de maner
 
 ## Descripcion y librerias
 
-La forma en la que planeamos cumplir los requerimientos es con el uso de librerias que nos facilitarian el desarrollo de los elementos que requerimos:
+La forma en la que planeamos cumplir los requerimientos es con el uso de librerías que nos facilitarían el desarrollo de los elementos que requerimos:
 
 * Three (Uso general, vimos que es muy usado para webgl y facilita muchas de las tareas).
 
-* jQuery (Creemos que nos ayudara a manejar eventos, no estamos muy seguros si sera necesario sobre lo que js ya ofrece, pero lo tenemos en cuenta).
+* jQuery (Creemos que nos ayudara a manejar eventos, no estamos muy seguros si será necesario sobre lo que js ya ofrece, pero lo tenemos en cuenta).
 
 * Cannon JS y PointerLockControl (Esto lo usaremos para el moviemiento de la camara y aspectos relacionados).
 
@@ -82,17 +82,17 @@ La forma en la que planeamos cumplir los requerimientos es con el uso de libreri
 
 ## Primera entrega del proyecto 
 
-La forma en la que el usario interactua con las estatuas y las pinturas es mediante el click a una distancia cercana. Se manejara el comportanmiento de cada pieza con estados, listeners y raycasting con el fin de que ciertos procesos no se puedan interumpir y los comportamientos sean como nosostros los esperamos.
+La forma en la que el usario interactua con las estatuas y las pinturas es mediante el click a una distancia cercana. Se manejará el comportanmiento de cada pieza con estados, listeners y raycasting con el fin de que ciertos procesos no se puedan interrumpir y los comportamientos sean como nosostros los esperamos.
 
 ### Interacción con estatuas (Todo puede cambiar, dependiendo de lo que veamos que podemos animar):
 
-* Venus de Milo: cuando el usuario le de click se espera que Venus volte a ver a la posción en donde te encontrabas cuando diste el click y despues de 5 segundos vuelva a su pose normal. Tambien, si es posible, que la estatua cambie de color a uno aleatorio.
-* Perro de Origami: Lo que planeamos que haga el perro es que se comporte como si lo hubieras acariciado (como se ve en la imagen) y despues de 7 segundos regrese a su pose normal.
+* Venus de Milo: cuando el usuario le de click se espera que Venus voltee a ver a la posición en donde te encontrabas cuando diste el click y después de 5 segundos vuelva a su posición normal. También, si es posible, que la estatua cambie de color a uno aleatorio.
+* Perro de Origami: Lo que planeamos que haga el perro es que se comporte como si lo hubieras acariciado (como se ve en la imagen) y después de 7 segundos regrese a su posición normal.
 ![imagen](https://user-images.githubusercontent.com/61795705/137788187-0fc5213c-f202-423e-984f-69b508a3c845.png)
-* Mapache: Queremos que el mapache cambie de escalas de manera aleatoria, al mismo tiempo que vaya cambiando de color. Al final, depues de 5 segundos, que regrese a como estaba.
-* Persona: Queremos que la estatua vuele por la habitacion, cambiando de color, y luego regrese a su posicion original. (10 segundos)
+* Mapache: Queremos que el mapache cambie de escalas de manera aleatoria, al mismo tiempo que vaya cambiando de color. Al final, depués de 5 segundos, que regrese a como estaba.
+* Persona: Queremos que la estatua vuele por la habitación, cambiando de color, y luego regrese a su posición original. (10 segundos)
 * Cubo y estatua enredada: Queremos que estas figuras vayan rotando sobre su propio eje, mientras se cambia su escala y color constantemente. En el proceso que esto pase flotaran un poco. (10 segundos)
-### Interaccion con pinturas:
+### Interacción con pinturas:
 
-* En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se movera (play al video) y luego regresara a su posicion original para que el usuario pueda volver a interactuar con ella.
+* En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se moverá (play al video) y luego regresará a su posición original para que el usuario pueda volver a interactuar con ella.
 	
