@@ -86,8 +86,8 @@ La forma en la que el usario interactua con las estatuas y las pinturas es media
 
 ### Interacción con estatuas (Todo puede cambiar, dependiendo de lo que veamos que podemos animar):
 
-* Venus de Milo: cuando el usuario le de click se espera que Venus voltee a ver a la posición en donde te encontrabas cuando diste el click y después de 5 segundos vuelva a su posición normal. También, si es posible, que la estatua cambie de color a uno aleatorio.
-* Perro de Origami: Lo que planeamos que haga el perro es que se comporte como si lo hubieras acariciado (como se ve en la imagen) y después de 7 segundos regrese a su posición normal.
+* Venus de Milo: Cuando el usuario le de click se espera que Venus empiece a levitar hacia el techo y desaparezca para luego aparecer por el suelo y regresar a su posición inicial. También, si es posible, que la estatua cambie de color a uno aleatorio.
+* Perro de Origami: Lo que planeamos que haga el perro es que se comporte como si lo hubieras acariciado (solo usando efectos de sonido).
 ![imagen](https://user-images.githubusercontent.com/61795705/137788187-0fc5213c-f202-423e-984f-69b508a3c845.png)
 * Mapache: Queremos que el mapache cambie de escalas de manera aleatoria, al mismo tiempo que vaya cambiando de color. Al final, depués de 5 segundos, que regrese a como estaba.
 * Persona: Queremos que la estatua vuele por la habitación, cambiando de color, y luego regrese a su posición original. (10 segundos)
