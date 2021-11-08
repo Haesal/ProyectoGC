@@ -96,3 +96,14 @@ La forma en la que el usario interactua con las estatuas y las pinturas es media
 
 * En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se moverá (play al video) y luego regresará a su posición original para que el usuario pueda volver a interactuar con ella.
 	
+## Modelo 3d(preview) y plano:
+
+![image](https://user-images.githubusercontent.com/42380925/140802260-760024f2-c8bb-48f0-bb78-59d826145e12.png)
+
+![image](https://user-images.githubusercontent.com/42380925/140802233-b1e5df60-fafb-4e1c-a1cb-86bce8558616.png)
+
+![image](https://user-images.githubusercontent.com/42380925/140802213-45a6798a-b668-4dda-bffc-914c0192be5a.png)
+
+![image](https://user-images.githubusercontent.com/42380925/140802192-b1bcfc3c-cec1-4865-a502-9e5ba27000d6.png)
+
+![WhatsApp Image 2021-11-07 at 12 07 07 PM](https://user-images.githubusercontent.com/42380925/140802101-4061ae8a-b42f-4985-9ff2-a4ec84bb0561.jpeg)
