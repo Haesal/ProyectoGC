@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Museo</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="Galeria.css" />
+        <script type="module" defer src="Galeria.js"></script>
+        <style>
+            body {
+              width: 100vw;
+              height: 100vh;
+              margin: 0px;
+              border: 0;
+              overflow: hidden; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="blocker">
+
+			<div id="instructions">
+				<span style="font-size:40px">Click to play</span>
+				<br />
+				(W, A, S, D = Move, MOUSE = Look around)
+            </div>
+        </div>
+        <video id="video1"  style="display:none">
+            <source src="../assets/Videos/948130e1b398d9b8150275ebe21470cb.mp4" type="video/mp4">
+        </video>
+        <video id="video2" style="display:none">
+            <source src="../assets/Videos/descargar.mp4" type="video/mp4">
+        </video>
+        <video id="video3" style="display:none">
+            <source src="../assets/Videos/image_processing20200928-9600-1hprsul.mp4" type="video/mp4">
+        </video>
+        <video id="video4" style="display:none">
+            <source src="../assets/Videos/3d_loop.mp4" type="video/mp4">
+        </video>
+        <div id="container">
+            <canvas id="webglcanvas"></canvas>
+        </div>
+    </body>
+
+</html>
