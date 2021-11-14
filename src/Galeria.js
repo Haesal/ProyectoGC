@@ -419,9 +419,9 @@ function galeriaCreate(){
     paint1.position.y = 0.8;
     paint1.receiveShadow = true;
     p1Group.add(paint1);
-    p1Group.position.x = 19.8;
+    p1Group.position.x = 21.3;
     p1Group.position.y = 2.5;
-    p1Group.position.z = 25;
+    p1Group.position.z = -2;
     p1Group.rotation.y = -Math.PI/2;
 
 
@@ -432,9 +432,9 @@ function galeriaCreate(){
     paint2.position.y = 0.8;
     paint2.receiveShadow = true;
     p2Group.add(paint2);
-    p2Group.position.x = 19.8;
+    p2Group.position.x = 21.3;
     p2Group.position.y = 2.5;
-    p2Group.position.z = 34.5;
+    p2Group.position.z = 16;
     p2Group.rotation.y = -Math.PI/2;
 
     //P3
@@ -444,9 +444,9 @@ function galeriaCreate(){
     paint3.position.y = 0.8;
     paint3.receiveShadow = true;
     p3Group.add(paint3);
-    p3Group.position.x = 15.17;
+    p3Group.position.x = -16.23;
     p3Group.position.y = 2.5;
-    p3Group.position.z = 29.75;
+    p3Group.position.z = -2;
     p3Group.rotation.y = Math.PI/2;
 
     //P4
@@ -456,9 +456,9 @@ function galeriaCreate(){
     paint4.position.y = 0.8;
     paint4.receiveShadow = true;
     p4Group.add(paint4);
-    p4Group.position.x = 15.17;
+    p4Group.position.x = -16.2;
     p4Group.position.y = 2.5;
-    p4Group.position.z = 38.25;
+    p4Group.position.z = 16;
     p4Group.rotation.y = Math.PI/2;
 
     scene.add(p1Group);
