@@ -18,6 +18,14 @@ let prevTime = Date.now();
 let ambientLight = null;
 let raycaster = null,/*mouse = new THREE.Vector2()*/ clicked;
 
+let cameraBox = null;
+let cameraBBox = null;
+let wallCollision = [];
+let decorationCol = [];
+let mRight = 0;
+let mForward = 0;
+
+
 let dogObj = { obj: '../assets/Dog/uploads_files_2600740_ORIGAM_CHIEN_Free.obj', mtl: '../assets/Dog/uploads_files_2600740_ORIGAM_CHIEN_Free.mtl' };
 let venusObj = { obj: '../assets/Venus/uploads_files_798016_venus_polygonal_statue.obj', mtl: '../assets/Venus/uploads_files_798016_venus_polygonal_statue.mtl' };
 let portObj = { obj: '../assets/Portrait/uploads_files_1898405_frame.obj', mtl: '../assets/Portrait/uploads_files_1898405_frame.mtl' };
@@ -216,8 +224,6 @@ async function loadObjMtlS(objModelUrl, objectList, xV, yV, zV, scaleV, rxV, ryV
 
 function update() {
     requestAnimationFrame(update);
-    // animate();
-
     if (controls.isLocked === true) {
         let time = Date.now();
         let delta = (time - prevTime) / 1000;
@@ -231,15 +237,36 @@ function update() {
         direction.normalize(); // this ensures consistent movements in all directions
 
         if (moveForward || moveBackward) {
-            velocity.z -= direction.z * 400.0 * delta;
+            velocity.z -= direction.z * 100.0 * delta;
         }
 
         if (moveLeft || moveRight) {
-            velocity.x -= direction.x * 400.0 * delta;
+            velocity.x -= direction.x * 100.0 * delta;
         }
 
         controls.moveRight(- velocity.x * delta);
+        mRight = - velocity.x * delta;
         controls.moveForward(- velocity.z * delta);
+        mForward = - velocity.z * delta;
+
+        cameraBox.position.set(camera.position.x,camera.position.y,camera.position.z);
+        cameraBBox = new THREE.Box3().setFromObject(cameraBox);
+
+        wallCollision.forEach(wall =>{
+            if(cameraBBox.intersectsBox(wall)){
+                console.log("Chocaste con pared")
+                controls.moveRight(- mRight);
+                controls.moveForward(- mForward);
+            }
+        })
+    
+        decorationCol.forEach(deco =>{
+            if(cameraBBox.intersectsBox(deco)){
+                console.log("Chocaste con deco")
+                controls.moveRight(- mRight);
+                controls.moveForward(- mForward);
+            }
+        })
 
         prevTime = time;
     }
@@ -582,9 +609,50 @@ function createScene(canvas) {
     camera.position.y = 2;
     camera.rotation.y = Math.PI / 8;
 
+    const camG = new THREE.BoxGeometry( 1, 3, 1);
+    const camM = new THREE.MeshBasicMaterial( {color: 0x00ff00, opacity: 0.0, transparent: true} );
+    cameraBox = new THREE.Mesh( camG, camM );
+    cameraBox.position.x = 17.5;
+    cameraBox.position.y = 1;
+    cameraBox.position.z = 40;
+    scene.add( cameraBox );
+
+    var decoG = new THREE.BoxGeometry( 1.5, 1.5, 1.5 );
+    var decoM = new THREE.MeshBasicMaterial( {color: 0x00ff00, opacity: 0, transparent: true} );
+    let boteBox = new THREE.Mesh(decoG,decoM);
+    boteBox.position.x = 19.3;
+    boteBox.position.y = 0.5;
+    boteBox.position.z = 23;
+    scene.add(boteBox);
+    let decoC = new THREE.Box3().setFromObject(boteBox);
+    decorationCol.push(decoC);
+
+    let bancaG = new THREE.BoxGeometry( 5.3, 2, 2 );
+    let bancaM = new THREE.MeshBasicMaterial( {color: 0x00ff00, opacity: 0, transparent: true} );
+    let bancaBox1 = new THREE.Mesh(bancaG,bancaM);
+    bancaBox1.position.x = 2;
+    bancaBox1.position.y = 0.5;
+    bancaBox1.position.z = 21.5;
+    scene.add(bancaBox1);
+    let bancaC1 = new THREE.Box3().setFromObject(bancaBox1);
+    decorationCol.push(bancaC1);
+
+    let bancaBox2 = new THREE.Mesh(bancaG,bancaM);
+    bancaBox2.position.x = 2;
+    bancaBox2.position.y = 0.5;
+    bancaBox2.position.z = -6.5;
+    scene.add(bancaBox2);
+    let bancaC2 = new THREE.Box3().setFromObject(bancaBox2);
+    decorationCol.push(bancaC2);
+
     raycaster = new THREE.Raycaster();
 
     galeriaCreate();
+
+    walls.forEach(wall =>{
+        let wallC = new THREE.Box3().setFromObject(wall);
+        wallCollision.push(wallC)
+    })
 
     document.addEventListener('keydown', onKeyDown, false);
     document.addEventListener('keyup', onKeyUp, false);
