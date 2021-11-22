@@ -1,6 +1,6 @@
 # ProyectoGC de Bruno Hae y Jesús Alcala
 
-Museo de arte interactivo, donde la persona puede leer la descripcion de ciertas piezas (pinturas y esculturas), al igual de que podra interactuar con ellas generando un cambio o efecto en estas. Las piezas nosotros las crearemos o selecionaremos. El modelo del museo no lo queremos hacer de un museo real, nosotros diseñaremos como es.
+Museo de arte interactivo, donde la persona puede leer la descripcion de ciertas piezas (pinturas y esculturas), al igual de que podra interactuar con ellas generando un cambio o efecto en estas. Las piezas nosotros las crearemos o seleccionaremos. El modelo del museo no lo queremos hacer de un museo real, nosotros diseñaremos como es.
 
 Ejemplos:
 Museo virtual: https://www.youtube.com/watch?v=CmpGmOcXj7w&t=82s
@@ -70,13 +70,15 @@ Nosotros pensamos trabajar de manera iterativa, avanzando en las tareas de maner
 
 ## Descripcion y librerias
 
-La forma en la que planeamos cumplir los requerimientos es con el uso de librerías que nos facilitarían el desarrollo de los elementos que requerimos:
+La forma en la que cumplimos los requerimientos fue con el uso de librerías que nos facilitaron el desarrollo de los elementos que requerimos:
 
-* Three (Uso general, vimos que es muy usado para webgl y facilita muchas de las tareas).
+* Three.js (Uso general, vimos que es muy usado para webgl y facilitó muchas de las tareas. Construcción de la escena y cargar objetos).
 
 * jQuery (Creemos que nos ayudara a manejar eventos, no estamos muy seguros si será necesario sobre lo que js ya ofrece, pero lo tenemos en cuenta).
 
-* Cannon JS y PointerLockControl (Esto lo usaremos para el moviemiento de la camara y aspectos relacionados).
+* Cannon JS y PointerLockControl (Usadas para el moviemiento de la cámara y aspectos relacionados).
+
+* Tween.js (Animaciones y cambios en las propiedades de los objetos más suaves).
 
 
 
@@ -84,14 +86,14 @@ La forma en la que planeamos cumplir los requerimientos es con el uso de librer�
 
 La forma en la que el usario interactua con las estatuas y las pinturas es mediante el click a una distancia cercana. Se manejará el comportanmiento de cada pieza con estados, listeners y raycasting con el fin de que ciertos procesos no se puedan interrumpir y los comportamientos sean como nosostros los esperamos.
 
-### Interacción con estatuas (Todo puede cambiar, dependiendo de lo que veamos que podemos animar):
+### Interacción con estatuas:
 
-* Venus de Milo: Cuando el usuario le de click se espera que Venus empiece a levitar hacia el techo y desaparezca para luego aparecer por el suelo y regresar a su posición inicial. También, si es posible, que la estatua cambie de color a uno aleatorio.
-* Perro de Origami: Lo que planeamos que haga el perro es que se comporte como si lo hubieras acariciado (solo usando efectos de sonido).
+* Venus de Milo: Cuando el usuario le de click, Venus comienza a girar y a desplazarse hacia abajo hasta desaparecer, después comienza a desplazarse hacia arriba hasta regresar a su posición original, todo esto, con cambios de color aleatorios durante la animación.
+* Perro de Origami: La estatua se comienza a mover de un lado a otro simulando a un perro "jugando" y comienza a cambiar de color de manera aleatoria para después regresar a su color y posición original.
 ![imagen](https://user-images.githubusercontent.com/61795705/137788187-0fc5213c-f202-423e-984f-69b508a3c845.png)
-* Mapache: Queremos que el mapache cambie de escalas de manera aleatoria, al mismo tiempo que vaya cambiando de color. Al final, depués de 5 segundos, que regrese a como estaba.
-* Persona: Queremos que la estatua vuele por la habitación, cambiando de color, y luego regrese a su posición original. (10 segundos)
-* Cubo y estatua enredada: Queremos que estas figuras vayan rotando sobre su propio eje, mientras se cambia su escala y color constantemente. En el proceso que esto pase flotaran un poco. (10 segundos)
+* Mapache: El mapache comienza a aumentar su escala de forma horizontal "estirándose" para despues regresar a su escala original y cambiando de color.
+* Persona: La estatua vuela por la habitación al darle click, cambiando de color, y luego regrese a su posición original. 
+* Cubo y estatua enredada: Estas figuras cambian de escala (el tamaño del cubo disminuye y el de la enredada aumenta) y color para después regresar a su tamaño y color original.
 ### Interacción con pinturas:
 
 * En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se moverá (play al video) y luego regresará a su posición original para que el usuario pueda volver a interactuar con ella.
