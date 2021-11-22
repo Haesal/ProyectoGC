@@ -96,7 +96,7 @@ La forma en la que el usario interactua con las estatuas y las pinturas es media
 * Cubo y estatua enredada: Estas figuras cambian de escala (el tamaño del cubo disminuye y el de la enredada aumenta) y color para después regresar a su tamaño y color original.
 ### Interacción con pinturas:
 
-* En este caso todas funcionan de la misma forma: cuando se de click a la pintura esta se moverá (play al video) y luego regresará a su posición original para que el usuario pueda volver a interactuar con ella.
+* En este caso todas funcionan de la misma forma: Cuando se da click a la pintura esta se mueve (play al video) y luego regresa a su posición original para que el usuario pueda volver a interactuar con ella.
 	
 ## Modelo 3d(preview) y plano:
 
